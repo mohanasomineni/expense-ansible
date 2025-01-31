@@ -8,9 +8,9 @@
       state: installed
 
   - name: start and enable mysql server
-    ansible.builtin.package:
+    ansible.builtin.service:
       name: mysqld
-      state: latest
+      state: installed
       enabled: yes
 
   # - name: connect to mysql server
